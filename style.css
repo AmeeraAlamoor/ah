@@ -1,0 +1,438 @@
+ *{ /* علامة النجمة للمحددات العامة يعني لكل العناصر الي بالhtml*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* حساب حجم الحد بدل ما نكتب الطول والعرض لكل وحدة*/
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none; /* زخرفة الحروف */
+    transition: all 0.4s  ; /* التحكم فى التحركات بين حالات العناصر */
+    text-transform:capitalize; /* تحويل النص الى انو يكون الحرف الاول من كل كلمة باحرف كبيرة*/
+}
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* سلوك التمرير*/ 
+}
+.heading{
+    text-align: center;
+    margin-bottom: 3rem; /*الهوامش الخارجية للبكس */
+
+}
+.heading span{
+    font-size: 2.5rem;
+    color: #cd9452;
+    letter-spacing: 1px; /*لمسافة بين الاحرف*/
+}
+.heading h3{
+    font-size: 1.5rem;
+    color: #000;
+    letter-spacing: 1px;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block; /* مسؤؤلة عن طريقة عرض العنصر */
+    background: #cd9452;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+}
+.btn:hover{
+    letter-spacing: 0.2rem; /* لما امشي المواس عليه هيبعدلي الاحرف عن بعض*/
+    color: #3a3939;
+
+}
+header{
+    padding-top: 2rem;
+    padding-bottom: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow:0 0.7rem 1rem rgba(0 , 0 , 0 ,0.7);
+    position: sticky;
+    top: 0; 
+    left: 0;
+    right: 0;
+    background:#ffffff ;
+    z-index:1000;
+}
+a.loge{
+    font-size:50px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #352c87;
+}
+a.loge:hover{
+    color:#120f35
+}
+nav.na{
+    font-size:25px;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    margin-right: 15em;
+    position: relative; 
+    left:21%;
+    
+}
+nav.na a{
+    font-size: 25px;
+    margin-left: 2rem;
+    color:#666 ;
+    text-decoration: none;
+}
+nav.na a:hover{
+    color:#cd9452;
+}
+.na li{
+    float: right; /* بتخلى الروابط جنب بعض */
+    list-style-type: none;/* بتمسح النقاط */
+}
+.home{
+    padding: 0;
+    background: #000000;
+}
+
+.home .slide span{
+    font-size: 3rem;
+    display: block;
+    padding: 0.5rem;
+    color: #ffffff;
+    animation: fadeIn .4s cubic-bezier(0.54 , 1.3 0.63 ,1.34) 0.2s backwards; 
+    letter-spacing: 1px;
+}
+.home .slide h3{
+    font-size: 5vw;
+    text-transform: uppercase;
+    text-shadow: 0 0.5rem 1rem rgba(0 , 0 , 0 ,0.7);
+    color: #ffffff;
+    line-height: 1;
+    padding: 2rem 0 ;
+    animation: fadeIn .4s cubic-bezier(0.54 , 1.3 0.63 ,1.34) 0.4s backwards; 
+    letter-spacing: 1px;
+}
+.imgs {
+    background-image: #000;
+    opacity: 0.6;
+    position: relative;
+}
+.slide{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    font-size: 18px;
+    background-color:rgba(0 , 0 , 0 ,0.5);
+    width:40%;
+    text-align: center;
+    border-radius: 20px;
+ }
+
+  /*home section end*/
+ /* about section starts*/
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.img img{
+    width:50%;
+    border-radius: 40px;
+}
+.about .c{
+    flex: 1 1 41rem;
+}
+.about .c .title{
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    width:50%;
+    position: relative; /*بنقدر نحرك العنصر متل ما بدنا بسهولة*/
+    left:50%;
+    top: 100px;
+    letter-spacing: 1px;
+}
+.about .c .title span{
+    color:#3b3030;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.about .c p{
+    font-size: 20px;
+    color: rgb(59, 59, 59);
+    padding: 1rem 0;
+    line-height: 2;
+    position: relative;
+    left:52%;
+    bottom:250px;
+    letter-spacing: 1px;
+}
+.c .btn{
+   
+    margin-right: 40%;
+    position: relative;
+    left:52%;
+    bottom:200px;  
+}
+.ha li{
+    list-style-type: none;
+}
+.Views {
+    display: flex;/*flex تجعل العناصر في صف واح بعد ما كانو بشكل عمودي*/
+    gap: 2rem; /* المسافة الي بينهم */
+    margin-top: 5rem;
+    margin-right: 20rem;
+}
+.Views .ha{
+    width: 23%;
+    text-align: center;
+    background: rgb(217, 212, 212);
+    padding: 60px;
+    margin-left: 50px;
+    position: relative;
+    left:52%;
+    bottom:150px; 
+    border-radius: 25px;
+    letter-spacing: 1px;
+}
+.ha h3{
+    padding-top: 1rem;
+}
+/*about section end*/ 
+/* room section starts */
+.room{
+    background: #f5f5f5;
+    text-align: center;
+    margin: 50px 0;
+}
+.room h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.room p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+}
+.rro{
+    
+    gap: 20px;/* المسافة بين الغرف */
+    
+
+}
+.rom{
+    border: 1px solid #8e8585;
+    border-radius: 8px;
+    padding: 20px;
+    width:37%;
+    text-align: center;
+    box-shadow: 0 2px 10px rgb(0, 0, 0,0.1);
+    display: inline-table;
+   
+
+}
+.rom:hover{
+    transform: translateY(-5px);
+}
+.rom img{
+    width:100%;
+    height: auto;
+    margin-bottom: 20px; /* المسافة بين الصورة والعنوان*/
+}
+.heart{
+    width: 30px;
+    display: flex;
+    position: relative;
+    left:35%;
+    gap: 30px;/* المسافة الى بينهم*/ 
+    margin-bottom: 10px;
+}
+.rom h3{
+    font-size: 33px;
+    margin-bottom: 10px;
+    color:#3b3030;
+    letter-spacing: 1px;
+}
+.rom p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.Price{
+    margin-bottom: 10px;
+    font-size: x-large;
+    color: rgb(10, 10, 102);
+}
+   /* room section end*/
+  /*order section starts*/
+.order{
+    background-color: #f09329;
+}
+.hea{
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    gap: 50px;
+
+}
+.hea span{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.hea h3{
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-family: fantasy;
+}
+form {
+    width: 80%;
+    height:40%;
+    padding:30px;
+    background: #fff;
+    position:relative;
+    left:10%;
+}
+.input{
+    box-sizing: border-box;
+    gap:50%;
+    width:90%;
+    margin: 1.2rem 0;
+    padding: 1rem 1rem;
+    font-size: 1.7rem;
+    color: #666;
+    border:1px solid #a49d9d;
+    position: relative;
+    left:50px;
+    text-transform: none;
+    display: inline-flex;
+    position: relative;
+    left: 30px;
+    text-align: center;
+    transition: 0.5s;/* لتحديد المدة التي سيتطلبها إكتمال التأثير*/
+    
+}
+input:focus{ /* لإضافة مؤثرات للعناصر*/
+    height: 30px;
+    background-color: rgb(156, 154, 154);
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+.input span{
+    color:#666 ;
+    font-size: 25px; 
+}
+input.inp{
+    font-size: 20px;
+    position: relative;
+    right: 40%;
+    width: 100%;
+    opacity: .7;
+
+}
+.in{
+    position: relative;
+    left: 50%;
+}
+/*order section end */
+/* Inquiries section start*/ 
+.bb{
+    background-color: #666;
+    border-top:5rem solid rgb(99, 108, 240);
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    margin-top: 20px;
+}
+.bb .heading span{
+    font-size: 3rem;
+}
+.bb .heading h3:hover{
+    color: rgb(160, 253, 0);
+    cursor: pointer;/* غيرنا المواس*/
+}
+.bb h3{
+    color: #fff;
+}
+.bb .inputBox textarea{
+    height: 20rem;
+    resize: none;
+    width: 50%;
+}
+.inputBox input:focus,
+.inputBox textarea:focus{
+
+    background: rgb(27, 25, 25);
+    color: #FFF;
+    cursor: pointer;
+}
+.inputBox textarea,
+.inputBox input
+{ 
+    width:99.9%;
+    margin: 1rem 0;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.7rem;
+    color: #666;
+    border:0.2rem solid #aaa;
+    text-transform: none;
+}
+.bb .inputBox label{
+    color:rgb(31, 30, 30) ;
+    font-size: 2rem;
+ }
+.bb form {
+
+    padding: 2rem;
+    background: #fff;
+    border-radius: 20px;
+}
+.t{
+   position: relative;
+   bottom:278px;
+
+}
+  /* Inquiries section End */
+  /*footer section start*/
+footer{
+    background: rgb(52, 47, 47);
+ 
+}
+footer .u{
+    text-align: center;
+    color: #FFF;
+}
+footer .u li{
+    text-decoration: none;
+    display:inline-block;
+    font-size: 1.4em;
+    padding-right: 20px;
+}
+footer li {
+    margin: 25px;
+    
+}
+footer li:hover{
+    transform: scale(2);/*بتعمل انبثاق للايقونة*/
+    
+}
+.footer-title a{
+    color: #FFF;
+    font-size: 1rem;
+    position: relative;
+    left: 42%;
+}
+.footer-title a:hover{
+    color: #f09329;
+}
+
+
+
+
+
